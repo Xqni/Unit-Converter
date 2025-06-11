@@ -32,7 +32,6 @@ const Form = ({ unit }) => {
         if (isNaN(value)) return
         if (fromUnit === '' || toUnit === '') return
         const unitObject = { value: parseFloat(value), fromUnit, toUnit }
-        console.log(sendreq(unit, unitObject))
         const result = await sendreq(unit, unitObject)
         setReturn(result)
     }
@@ -52,7 +51,7 @@ const Form = ({ unit }) => {
                             <select id='fromUnitSelect' value={fromUnit} onChange={e => setFromUnit(e.target.value)}>
                                 <option value="" disabled>Select</option>
                                 {categories.map(category => (
-                                    <option value={category} key={category}>{category}</option>
+                                    <option value={category} key={category}>{toTitleCase(category)}</option>
                                 ))}
                             </select>
                         </div>
@@ -63,7 +62,7 @@ const Form = ({ unit }) => {
                             <select id='toUnitSelect' value={toUnit} onChange={e => setToUnit(e.target.value)}>
                                 <option value="" disabled>Select</option>
                                 {categories.map(category => (
-                                    <option value={category} key={category}>{category}</option>
+                                    <option value={category} key={category}>{toTitleCase(category)}</option>
                                 ))}
                             </select>
                         </div>
