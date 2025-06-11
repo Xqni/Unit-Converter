@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'http://localhost:3001/'
+const baseUrl = '/'
 
 const sendreq = async (unit, object) => {
     const request = axios.post(`${baseUrl}${unit}`, object)
