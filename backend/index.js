@@ -6,7 +6,7 @@ app.use(cors())
 app.use(express.static('dist'))
 
 app.get('/', (request, response) => {
-    response.send('Hello World!')
+    response.send('If you are seeing this, I messed up I guess ! (┬┬﹏┬┬)')
 })
 
 app.post('/length', (request, response) => {
@@ -89,7 +89,7 @@ app.post('/temparature', (request, response) => {
     response.json(returnObj)
 })
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+  console.log(`Server running on port ${PORT}`)
 })
