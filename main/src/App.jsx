@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Form from './components/Form'
 import './index.css'
 function App() {
- // initialize state to keep track of selected unit converter
+  // initialize state to keep track of selected unit converter
   const [unit, setUnit] = useState(null)
   const units = ['length', 'weight', 'temparature'] // different converters available
   const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase() // function for title-casing
