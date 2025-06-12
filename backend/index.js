@@ -91,7 +91,7 @@ app.post('/temparature', (request, response) => {
         fahrenheit: value => (value - 32) * 5 / 9,
         kelvin: value => value - 273.15
     }
-    
+
     // function packed object to convert from celsius
     const fromCelsius = {
         celsius: value => value,
@@ -118,7 +118,7 @@ app.post('/temparature', (request, response) => {
     response.json(returnObj)
 })
 
-// if deployed only gets a dynamic port
+// if deployed online, gets a dynamic port
 // locally gets 3001 or whatever is free define here
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
