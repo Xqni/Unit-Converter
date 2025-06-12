@@ -1,11 +1,14 @@
+// simple component to display the result only after use clicks on 'convert' button
 const Result = ({ returnValue }) => {
-  const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+  const toTitleCase = str => str.charAt(0).toUpperCase() + str.slice(1).toLowerCase() //function for title=casing
 
   return (
     <>
-      <h3>Result</h3>
-      <div>
-        {returnValue.value} {toTitleCase(returnValue.toUnit)}
+      <div className="result">
+        <h3>Result</h3>
+        <div>
+          {returnValue.value} {toTitleCase(returnValue.toUnit)}
+        </div>
       </div>
     </>
   )
