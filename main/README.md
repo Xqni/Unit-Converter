@@ -1,4 +1,6 @@
 # Frontend
+![Screenshot 2025-06-14 182934](https://github.com/user-attachments/assets/af654fdc-3c87-4a73-aa7d-4f7822cdfeb6)
+
 
 This is what the users basically see when visiting the link. Although not quite true because a production build with latest changes is created and deployed on the fly. The build happens in the deployment process which I defined commands for on Render.
 ``` javascript
