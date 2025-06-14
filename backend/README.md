@@ -33,4 +33,4 @@ In case you are wondering what are those scripts that do all of this building an
   }
 ```
 
-On Render, you can simply type npm build:ui && npm start to start the server and interact with the application
+On Render, you can simply type ```javascript npm build:ui && npm start``` to start the server and interact with the application
