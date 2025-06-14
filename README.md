@@ -6,7 +6,7 @@ A simple web app built using React library for frontend and Express for backend.
 ## Hello 👋
 Thank you for checking my project, if you find any mistakes please let me and I will try to imporve it.
 
-## Example/Code
+## Link and Description
 
 [Unit Converter](https://unit-converter-arra.onrender.com/) link to the app hosted on Render.
 
