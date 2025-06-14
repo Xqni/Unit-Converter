@@ -33,7 +33,7 @@ export default App
 The App component itself is not that heavy and loaded but the use of different components makes it much more managable.
 
 
-Currently, for the frontend itself I am using Reacy library to build UI components and display them in JSX files.
+Currently, for the frontend itself I am using React library to build UI components and display them in JSX files.
 I also refactored my code to ensure clean management. For example:
 - 'src/components/' contains all the components that I created and used in the application. Also worth noting that I can reuse these at any point in time.
 - 'src/services/' directory has the api conversation. Basically the conversation with the backend happens here.
