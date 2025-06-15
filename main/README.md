@@ -58,6 +58,7 @@ export default sendreq
 ```
 
 I used [axios](https://axios-http.com/docs/intro) for my http request handling.
+
 I also defined a proxy to forward requests to my ```localhost:3001``` server when developing.
 ```javascript
 import { defineConfig } from 'vite'
