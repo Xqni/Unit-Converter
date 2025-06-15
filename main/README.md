@@ -58,3 +58,23 @@ export default sendreq
 ```
 
 I used [axios](https://axios-http.com/docs/intro) for my http request handling.
+I also defined a proxy to forward requests to my ```localhost:3001``` server when developing.
+```javascript
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  // if backend deployed on internet, forwards requests to local port for dev purposes
+  // needs to have dev env run, npm run dev
+  server: {
+    proxy: {
+      '/': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+      },
+    }
+  },
+})
+```
