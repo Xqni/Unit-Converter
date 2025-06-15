@@ -20,7 +20,7 @@ You can check the index.js file to see my RESTful APIs and how I am converting b
 ```javascript
 app.use(express.static('dist')) // to display front-end build
 ```
-It is worth noting that this line of code is extermely helpful in development process. If I visit my localhost:3001 when the server is running instead of display a blank page or a text message, I can display my entire frontend and interact with it. This is exactly what is happening when deploying it to Render. It creates a new build of the frontend UI to ensure that any changes made there are reflected on the server as well, updates the 'dist' directory from frontend to backend and then displays it.
+It is worth noting that this line of code is extermely helpful in development process. If I visit my ```localhost:3001``` when the server is running instead of display a blank page or a text message, I can display my entire frontend and interact with it. This is exactly what is happening when deploying it to Render. It creates a new build of the frontend UI to ensure that any changes made there are reflected on the server as well, updates the 'dist' directory from frontend to backend and then displays it.
 
 In case you are wondering what are those scripts that do all of this building and deploying.
 ```javascript
