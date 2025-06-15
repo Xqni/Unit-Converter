@@ -15,7 +15,7 @@ app.use(cors()) // to allow requests from different origins
 app.use(express.static('dist')) // to display front-end build
 ```
 
-You can check the index.js file to see my RESTful APIs and how I am converting between different units and such.
+You can check the ```index.js``` file to see my RESTful APIs and how I am converting between different units and such.
 
 ```javascript
 app.use(express.static('dist')) // to display front-end build
