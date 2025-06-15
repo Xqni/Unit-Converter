@@ -34,4 +34,5 @@ In case you are wondering what are those scripts that do all of this building an
 ```
 
 On Render, you can simply type ```npm build:ui && npm start``` to start the server and interact with the application
+
 ![image](https://github.com/user-attachments/assets/f6ecab64-b917-4d7e-aca0-c4a71f798d82)
