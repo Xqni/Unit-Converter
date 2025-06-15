@@ -14,8 +14,8 @@ Thank you for checking my project, if you find any mistakes please let me and I 
 
 It converts between different units of measurement and utilizes backend logic to calculate that value.
 
-- Check out 'main' directory for frontend code
-- Check out 'backend' directory for backend code
+- Check out ```main``` directory for frontend code
+- Check out ```backend``` directory for backend code
 
 
 ## Websites Used 🛜
